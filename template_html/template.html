@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+        <body style="background-color: rgb(255, 255, 194); text-align: center;">
+            <img src="https://t3.ftcdn.net/jpg/04/64/21/16/360_F_464211621_1jnNL6kEtl4ZYYRE1bnPtbSjsWHkSjVH.jpg" alt="Banner image" height="200px" width="100%">
+            <hr>
+            <h1 style="color: blueviolet;font-size: 400%; text-align: center;margin-bottom: -10px; margin-top: -15px;">Calculator</h1>
+            <hr style="margin-bottom: -10px;">
+            <p style="font-size: 150%; margin-bottom: -5px;">Enter the Equation</p>
+            <form>
+                {% csrf_token %}<br>
+                <input type="text" style="font-size: x-large; font-family: Cambria; text-align: center;" name="calc"><br>
+                <input type="submit" value="Evaluate" style="margin-top: 20px; color: rgb(0, 0, 0); font-size: x-large; background-color: rgb(255, 184, 223);">
+            </form>
+            <p style="font-size: x-large; margin-bottom: -20px;margin-top: 20px;">Answer:</p>
+            <p style="font-size: xx-large; font-weight: bold; color: rgb(255, 0, 0);">{{ans_}}</p>
+            
+            <p style="font-weight: bold; margin-bottom: -10px;">How it works:</p>
+            <p style="text-align: inherit;">1. Enter a Equation 2+2<br>2. Press Evaluate<br>3. Ans: 4</p>
+        </body>
+</html>
